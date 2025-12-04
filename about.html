@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Our Restaurant</title>
+	<link rel="stylesheet" href="bootstrap.min (1).css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<style>
+		#about {
+			padding: 50px 0;
+			background-color: #f8f9fa;
+		}
+		.about-image img {
+			max-width: 100%;
+			height: auto;
+		}
+		#home {
+			background: url('./images/gallery.jpg') no-repeat center center/cover;
+			height: 500px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.navbar {
+			background-color: #1c1f2a;
+			padding: 15px;
+			border-radius: 10px;
+		}
+		.navbar-brand {
+			font-size: 24px;
+			font-weight: bold;
+			color: #f7941d;
+		}
+		.navbar-brand i {
+			margin-right: 8px;
+		}
+		.nav-link {
+			color: white;
+			margin-right: 15px;
+		}
+		.nav-link:hover {
+			color: #f7941d;
+		}
+		.footer {
+			background-color: #111111e2;
+			color: white;
+			padding: 30px 0;
+		}
+		.footer h5 {
+			font-weight: bold;
+		}
+		.footer a {
+			color: white;
+			text-decoration: none;
+		}
+		.btn:hover {
+			transform: scale(1.1);
+		}
+	</style>
+	<script>
+    $(document).ready(function () {
+      $("p").hide();
+      $("p").delay(500);
+      $("p").slideDown(6000);
+      $.getJSON("./hotel.json", function (hotellist) {
+        $.each(hotellist, function (i, hotelObj) {
+          var hoteldata = `
+            <div class="col-md-3">
+              <img src="${hotelObj.image}" alt="" style="width:17rem; height:300px;border-radius:20px;margin:5px">
+            </div>`
+          $(".hoteldiv").append(hoteldata);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+	</body><nav class="navbar navbar-expand-lg">
+		<img src="./images/logo1.jpg" style="height: 90px;width: 400px;margin-left: 200px;">
+		<div class="container" style="margin-left: 400px;">
+<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" href="Home.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+					<li class="nav-item"><a class="nav-link" href="chef.html">CHEF</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+				</ul>
+				<a href="./contact.html" class="btn" style="background-color: #f7941d;">BOOK A TABLE</a>
+			</div>
+		</div>
+	</nav>
+<section id="home"></section>
+	<section id="about" class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6 about-image">
+				<img src="./images/h2.jpg" class="imgc4" alt="" class="img-fluid" style="height: 600px;">
+			</div>
+			<div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.729);height: 600px;color: white;">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h2 align="center">About Our Restaurant</h2>
+				<p align="center" style="font-size: 20px;font-family:'Times New Roman', Times, serif;">Welcome to our
+					restaurant, where we serve delicious and authentic cuisine in a warm and inviting atmosphere. Our team is
+					dedicated to providing you with an exceptional dining experience.</p>
+				<p align="center" style="font-size: 20px;font-family:'Times New Roman', Times, serif;">We use the freshest
+					ingredients, crafted by expert chefs, to bring you mouthwatering dishes that keep you coming back for more.
+				</p>
+				<a href="menu.html" class="btn btn-primary" style="margin-left: 200px;">Explore Our Menu</a>
+			</div>
+		</div>
+	</section>
+	<i>
+		<h2 style="font-family:cursive;margin-left: 200px;">Food Gallery:</h2>
+	</i>
+	<hr style="width: 200px;border: 1px solid black;margin-left: 200px;">
+	<div class="container mt-4">
+    <div class="row hoteldiv"></div> 
+  </div><br>
+	<a href="./contact.html" class="btn"
+		style="font-family:'Times New Roman', Times, serif;border-radius: 50px;padding-top: 8px;font-size: 20px;	color: white;background-color:#f7941d;width: 300px;border-radius: 50px;margin-left: 600px;transition: background-color 0.3s, transform 0.3s;">Order Now</a>
+	<br>
+	<br>
+	<footer class="footer">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-md-4">
+					<h5 style="margin-right: 200px;">Social Media</h5>
+					<div class="footer-sect" style="margin-right:200px;">
+						<img src="./images/icon-fb.png">
+						<img src="./images/icon-insta.png">
+						<img src="./images/icon-in.png">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h5 style="margin-right:150px;">Restaurant Timings</h5>
+					<p style="margin-right:150px;">Mon-Fri : 11:00 AM To 12:30 MID NIGHT</p>
+					<p style="margin-right:150px;">Sat : 11:00 AM To 12:30 MID NIGHT</p>
+					<p style="margin-right:150px;">Sun : 11:00 AM To 12:30 MID NIGHT</p>
+				</div>
+				<div class="col-md-4">
+					<h5>GET IN TOUCH</h5>
+					<p>
+						Mr. Multicusine Restaurant and Banquets, Swastik House, Upper Ground Floor and Basement, Near Kargil Chowk,
+						Piplod Dumas Road, Surat 395007
+					</p>
+					<p align="margin-left">+91 7575093930, 02612222225, 02612222226</p>
+					<p align="margin-left">info@mrhospitality.in</p>
+				</div>
+			</div>
+			<hr style="color: white;border: 1px solid white;">
+			<div class="footer-bottom">
+				<p style="color: white;">2021 © Mr. Multicusine Restaurant & Banquets All Rights Reserved. Design By <a
+						href="#">Petpooja</a>.</p>
+			</div>
+		</div>
+	</footer>
+</body></html>

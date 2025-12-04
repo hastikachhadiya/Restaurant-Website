@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap.min (1).css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<style>
+		#home {
+			background: url('./images/surat-baking-company.jpg') no-repeat center center/cover;
+			height: 500px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			text-align: center;
+		}
+		.overlay {
+			background: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			border-radius: 10px;
+			font-size: 25px;
+		}
+		.navbar {
+			background-color: #1c1f2a;
+			padding: 15px;
+			border-radius: 10px;
+		}
+		.navbar-brand {
+			font-size: 24px;
+			font-weight: bold;
+			color: #f7941d;
+		}
+		.navbar-brand i {
+			margin-right: 8px;
+		}
+		.nav-link {
+			color: white;
+			margin-right: 15px;
+		}
+		.nav-link:hover {
+			color: #f7941d;
+		}
+		.footer {
+			background-color: #111111e2;
+			color: white;
+			padding: 30px 0;
+		}
+		.footer h5 {
+			font-weight: bold;
+		}
+		.footer a {
+			color: white;
+			text-decoration: none;
+		}
+		.social-icons img {
+			color: white;
+			font-size: 24px;
+			margin: 0 10px;
+			display: flex;
+		}
+		.social-icons a:hover {
+			color: #ccc;
+		}
+		.btn:hover {
+			transform: scale(1.1);
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$("p").hide();
+			$("p").delay(500);
+			$("p").slideDown(9000);
+			$("img.imgc2").mouseenter(function () {
+				$(this).animate({ borderRadius: '30%' }, 3000)
+			})
+			$("img.imgc2").mousedown(function () {
+				$(this).animate({ borderRadius: '20%' }, 3000)
+			})
+		})
+	</script>
+</head>
+
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+	<nav class="navbar navbar-expand-lg">
+		<img src="./images/logo1.jpg" style="height: 90px;width: 400px;margin-left: 200px;">
+		<div class="container" style="margin-left: 400px;">
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" href="Home.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+					<li class="nav-item"><a class="nav-link" href="chef.html">CHEF</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+				</ul>
+				<a href="./contact.html" class="btn" style="background-color: #f7941d;">BOOK A TABLE</a>
+			</div>
+		</div>
+	</nav>
+	<section id="home" style="margin-top: 5px;">
+		<div class="overlay">
+			<h1 style="color:orange">Welcome to Our Restaurant</h1>
+			<h3>Delicious food, great ambiance, and excellent service.</h3>
+			<a href="menu.html" class="btn btn-primary">View Menu</a>
+		</div>
+	</section>
+	<div style="display: flex;margin-top:20px;">
+		<img src="./images/h1.jpg" class="imgc2" alt="" height="400px" width="600px"
+			style="margin-left: 2%;margin-top: 2%;"><br>
+		<p style="margin-top: 5%;margin-left: 2%;font-size: 20px;font-family:'Times New Roman', Times, serif;">Some of the
+			best stories in life start around a meal and a drink or two’-- this is the philosophy that Pavilion – Garden of
+			Spices runs on. Stepping in, you’ll observe the area is split up into three sections, offering you a unique
+			experience in each, every time you visit – two dome shaped dining restaurant with a capacity of 250 each and
+			lush green garden for party and big events!A wide assortment of multicuisine dishes, delicious mocktails,
+			woodfired pizzas, Sushi are curated to satisfy every patron that steps in. Whether you’re looking to unwind
+			after a long day of work, catch up with your family or hosting a party, the atmosphere here is perfect for any
+			occasion.</p>
+	</div><br><br>
+	<div style="display: flex;">
+		<p style="margin-left: 2%;margin-top: 5%;font-size: 20px;font-family:'Times New Roman', Times, serif;">
+			Restaurants know the importance of a strong first impression. It's why they invest in exterior design, decorate
+			their entranceways and train hosts to welcome guests with a warm smile.Nowadays, however, more than 70% of diners visit a restaurant's website before deciding where to dine, which
+			means the first impression happens long before they set foot on-premises. It happens online. And when it does,
+			the restaurant description plays a pivotal role.To help overcome the writing hurdle, we've created the resource
+			below. In addition to defining best practices, we have curated 20 examples of effective restaurant descriptions
+			and analyzed why they work. If you don't know where to start or feel stuck, scroll through these examples and
+			see if they spark new ideas.</p>
+		<img src="./images/h2.jpg" class="imgc2" alt="" height="400px" width="700px">
+	</div><br>
+	<footer class="footer">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-md-4">
+					<h5 style="margin-right: 200px;">Social Media</h5>
+					<div class="footer-sect" style="margin-right:200px;">
+						<img src="./images/icon-fb.png">
+						<img src="./images/icon-insta.png">
+						<img src="./images/icon-in.png">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h5 style="margin-right:150px;">Restaurant Timings</h5>
+					<p style="margin-right:150px;">Mon-Fri : 11:00 AM To 12:30 MID NIGHT</p>
+					<p style="margin-right:150px;">Sat : 11:00 AM To 12:30 MID NIGHT</p>
+					<p style="margin-right:150px;">Sun : 11:00 AM To 12:30 MID NIGHT</p>
+				</div>
+				<div class="col-md-4">
+					<h5>GET IN TOUCH</h5>
+					<p>
+						Mr. Multicusine Restaurant and Banquets, Swastik House, Upper Ground Floor and Basement, Near Kargil Chowk,
+						Piplod Dumas Road, Surat 395007
+					</p>
+					<p align="margin-left">+91 7575093930, 02612222225, 02612222226</p>
+					<p align="margin-left">info@mrhospitality.in</p>
+				</div>
+			</div>
+			<hr style="color: white;border: 1px solid white;">
+			<div class="footer-bottom">
+				<p style="color: white;">2021 © Mr. Multicusine Restaurant & Banquets All Rights Reserved. Design By <a
+						href="#">Petpooja</a>.</p>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

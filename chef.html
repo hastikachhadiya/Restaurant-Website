@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min (1).css">
+  <script src="jquery-3.7.1.min.js"></script>
+  <style>
+    .navbar {
+      background-color: #1c1f2a;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f7941d;
+    }
+    .navbar-brand i {
+      margin-right: 8px;
+    }
+    .nav-link {
+      color: white;
+      margin-right: 15px;
+    }
+    .nav-link:hover {
+      color: #f7941d;
+    }
+    .footer {
+      background-color: #111111e2;
+      color: white;
+      padding: 30px 0;
+    }
+    .footer h5 {
+      font-weight: bold;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    #home {
+      background: url('./images/c.jpg') no-repeat center /cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    #chefs {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+    .chef-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .chef-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 500px;
+    }
+    .chef-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 15px;
+    }
+    .navbar {
+      background-color: #1c1f2a;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f7941d;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+      margin-right: 15px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #f7941d;
+    }
+    .active {
+      color: #f7941d;
+      font-weight: bold;
+    }
+    .profile-card {
+      display: flex;
+      max-width: 1000px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .profile-info h2 {
+      color: #b59f60;
+    }
+    .highlight {
+      color: #b59f60;
+      font-weight: bold;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $("p").hide();
+      $("p").delay(500);
+      $("p").slideDown(6000);
+      $("img.imgc2").mouseenter(function () {
+        $(this).animate({ borderRadius: '30%' }, 1000)
+      })
+      $("img.imgc2").mousedown(function () {
+        $(this).animate({ borderRadius: '20%' }, 1000)
+      })
+      $("img.imgc1").mouseenter(function () {
+        $(this).fadeOut(1000);
+      })
+      $("img.imgc1").mouseleave(function () {
+        $(this).fadeIn(1000);
+      })
+    })
+  </script>
+</head>
+
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+  <nav class="navbar navbar-expand-lg">
+    <img src="./images/logo1.jpg" style="height: 90px;width: 400px;margin-left: 200px;">
+    <div class="container" style="margin-left: 400px;">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="Home.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+          <li class="nav-item"><a class="nav-link" href="chef.html">CHEF</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+        <a href="./contact.html" class="btn" style="background-color: #f7941d;">BOOK A TABLE</a>
+      </div>
+    </div>
+  </nav>
+<section id="home" style="margin-top: 5px;">
+    <div class="overlay">
+      <b>
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Chef</h1>
+      </b>
+      <h5 style="font-size: 30px;">Mr.Multicusine Restaurant and Banqets</h5>
+    </div>
+  </section>
+<div class="container-fluid"
+    style="margin-left: 250px;justify-content:center; padding:10px;  background-color: #f8f9fa;align-items: flex-start;margin-top: 50px;">
+    <div class="profile-card">
+      <div class="profile-img">
+        <img src="./images/profile.jpg" alt=" ">
+      </div>
+      <div class="profile-info" style="margin-left: 30px;">
+        <h2>Umesh Pavasiya</h2>
+        <p><strong>Current Title:</strong> <span class="highlight">Managing Director</span></p>
+        <p><strong>Company:</strong> <span class="highlight">Pavasiya Hospitality</span></p>
+        <p><strong>Education:</strong> <span class="highlight">Symbiosis College, Pune, Maharashtra</span></p>
+        <hr>
+        <h4>Profile</h4>
+        <h5>
+          We at Pavasiya Hospitality believe that the mantra to happiness and the spread of warmth can be achieved when
+          good food is served with utmost love and passion. Our first outlet “<span
+            class="highlight">Mr.Multicusine</span>”
+          was founded in 2013 to recreate the magic of Italian cuisine in the lanes of Surat. With the immense
+          popularity that the restaurant enjoyed, we realized that there was a dearth of specialty restaurants both in
+          the Fine Dining and Casual Dining spheres.
+        </h5>
+        <h5>
+          This all motivated me to follow our single-minded dream with 'passion, hard work' and 'dedication' and thus,
+          began the journey of “<span class="highlight">SPICEVILLA</span>” (Restaurant & Banquet) and later, “<span
+            class="highlight">Mr.Multicusine</span>” – (Restaurant & Party Lawn) which aimed at bringing innovative and
+          creative dining experiences for all.
+        </h5>
+        <h4 class="highlight">Also, Our newest venture premium disco lounge – Danza is coming real soon!</h4>
+        
+      </div>
+    </div>
+  </div><section id="chefs" class="container text-center">
+    <h2 class="mb-5">Meet Our Expert Chefs:</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="chef-card">
+          <img src="./images/c113.jpg" alt="">
+          <div class="chef-info">
+            <h5>Sef Khan</h5>
+            <h5>Specialty: Italian Cuisine</h5>
+            <h5>10+ years of experience</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chef-card">
+          <img src="./images/c12.jpg" alt="">
+          <div class="chef-info">
+            <h5>Chef Emma Smith</h5>
+            <h5>Specialty: French Cuisine</h5>
+            <h5>12+ years of experience</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chef-card">
+          <img src="./images/c13.jpg" alt="">
+          <div class="chef-info">
+            <h5>Chef Robert Brown</h5>
+            <h5>Specialty: Japanese Cuisine</h5>
+            <h5>15+ years of experience</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br><div class="container-fluid text-center" style="background-color: white;border-radius: 20px;">
+    <h2>Meet Our Expert Plans:</h2>
+    <img src="./images/p3.jpg" class="" alt=" " style="height: 800px;margin-top:0px;"></div>
+  <div class="container-fluid text-center" style="background-color: white;border-radius: 20px;">
+    <img src="./images/p1.jpg" class="" alt=" " style="height: 800px;margin-top:0px;"></div>
+  <div class="container-fluid text-center" style="background-color: white;border-radius: 20px;">
+    <img src="./images/p2.jpg" class="" alt=" " style="height: 800px;margin-top:0px;">
+  </div><footer class="footer">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 style="margin-right: 200px;">Social Media</h5>
+          <div class="footer-sect" style="margin-right:200px;">
+            <img src="./images/icon-fb.png">
+            <img src="./images/icon-insta.png">
+            <img src="./images/icon-in.png">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 style="margin-right:150px;">Restaurant Timings</h5>
+          <p style="margin-right:150px;">Mon-Fri : 11:00 AM To 12:30 MID NIGHT</p>
+          <p style="margin-right:150px;">Sat : 11:00 AM To 12:30 MID NIGHT</p>
+          <p style="margin-right:150px;">Sun : 11:00 AM To 12:30 MID NIGHT</p>
+        </div>
+        <div class="col-md-4">
+          <h5>GET IN TOUCH</h5>
+          <p>
+            Mr. Multicusine Restaurant and Banquets, Swastik House, Upper Ground Floor and Basement, Near Kargil Chowk,
+            Piplod Dumas Road, Surat 395007
+          </p>
+          <p align="margin-left">+91 7575093930, 02612222225, 02612222226</p>
+          <p align="margin-left">info@mrhospitality.in</p>
+        </div>
+      </div>
+      <hr style="color: white;border: 1px solid white;">
+      <div class="footer-bottom">
+        <p style="color: white;">2021 © Mr. Multicusine Restaurant & Banquets All Rights Reserved. Design By <a
+            href="#">Petpooja</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
